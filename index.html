@@ -1,15 +1,65 @@
-<section id="media">
-    <h2>A Short Clip</h2>
+<section id="contact">
+    <h2>Contact Me</h2>
 
-    <video controls width="480">
-        <source src="intro.mp4" type="video/mp4">
-        <source src="intro.webm" type="video/webm">
+    <form id="contact-form">
 
-        Your browser does not support the video tag.
-    </video>
+        <fieldset>
+            <legend>Contact Form</legend>
 
-    <p>
-        <strong>Transcript summary:</strong>
-        A short introduction about my Web Technologies course.
-    </p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="3">
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="topic">Topic:</label>
+            <select id="topic" name="topic" required>
+                <option value="">Select a topic</option>
+                <option value="web">Web Technologies</option>
+                <option value="study">Study</option>
+                <option value="other">Other</option>
+            </select>
+
+            <br><br>
+
+            <p>Preferred Contact Method:</p>
+
+            <input type="radio" id="email-contact" name="contact-method" value="email">
+            <label for="email-contact">Email</label>
+
+            <input type="radio" id="phone-contact" name="contact-method" value="phone">
+            <label for="phone-contact">Phone</label>
+
+            <br><br>
+
+            <input type="checkbox" id="updates" name="updates">
+            <label for="updates">I want to receive updates</label>
+
+            <br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+
+            <br><br>
+
+            <label for="rating">Interest Level:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10">
+
+            <br><br>
+
+            <label for="message">Message:</label>
+            <br>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </fieldset>
+
+    </form>
 </section>
